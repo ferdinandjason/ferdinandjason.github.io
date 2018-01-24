@@ -1,0 +1,360 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat',sans-serif;
+  }  
+
+.unselectable{
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+  }
+
+.wrap {
+    margin: 0 auto;
+    max-width: 1140px;
+    padding: 0 20px;
+}
+
+header {
+    position: relative;
+    z-index: 999;
+}
+
+section {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-transition: .5s ease;
+    transition: .5s ease;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+section.intro {
+    text-align: center;
+}
+
+section.intro h2,
+section.intro h5 {
+    font-weight: 300;
+    margin-bottom: 10px;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    color: #222;
+}
+
+h1 {
+    font-size: 8vw;
+    font-weight: bold;
+}
+
+p {
+    line-height: 1.4;
+    margin-bottom: 18px;
+}
+
+/* ----------------------
+  social-links color
+------------------------*/
+.fa-github-alt {
+  color: #000000
+}
+
+.fa-facebook {
+  color: #3b5998
+}
+
+.fa-google-plus {
+  color: #dd4b39
+}
+
+.fa-gratipay{
+  color: #00c300
+}
+
+.fa-chevron-down{
+  color: #FFFFFF
+}
+
+/* ----------------------
+  name card
+------------------------*/
+.profile-card h1,
+.profile-card h2 {
+  font-weight: 500;
+  margin: 0px 0px 5px 0px;
+}
+
+.profile-card h1 {
+  font-size: 40px;
+}
+
+.profile-card h2 {
+  font-size: 30px;
+}
+
+.profile-card p {
+  margin: 0px;
+}
+
+.profile-card {
+  background: #FFFFFF;
+  border-radius: 40px;
+  width: 600px;
+  height: 455px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  overflow: hidden;
+  opacity: 1;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.5);
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16), 0px 3px 6px rgba(0, 0, 0, 0.5);
+}
+
+.profile-card header h1 {
+  color: rgb(35,39,65);
+}
+  
+.profile-card header a {
+  display: inline-block;
+  text-align: center;
+  position: relative;
+  margin: 25px 30px;
+}
+  
+.profile-card header a:after {
+  position: absolute;
+  content: "";
+  bottom: 3px;
+  right: 3px;
+  width: 20px;
+  height: 20px;
+}
+  
+.profile-card header a > img {
+  width: 120px;
+  max-width: 100%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  -webkit-transition: -webkit-box-shadow 0.3s ease;
+  transition: box-shadow 0.3s ease;
+  -webkit-box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0px 0px 0px 8px rgba(0, 0, 0, 0.06);
+}
+  
+.profile-card header a:hover > img {
+  -webkit-box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 0px 0px 12px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card header {
+  width: auto;
+  height: 260px;
+  top: 20px;
+  padding: 20px 20px;
+  display: block;
+  float: none;
+  border-right: none;
+}
+.profile-card .profile-bio {
+  width: auto;
+  height: auto;
+  padding: 50px 20px 20px;
+  display: block;
+  float: none;
+}
+.profile-social-links {
+  width: 100%;
+  display: block;
+  float: none;
+  padding: 20px 20px;
+  text-align: center;
+  box-sizing: border-box;
+  justify-content: center;
+  display: flex;
+}
+.profile-social-links .icon{
+  width: 58px;
+  height: 58px;
+  font-size: 35px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 3px solid;
+}
+.profile-social-links .icon:hover{
+  width: 78px;
+  height: 78px;
+  font-size: 55px;
+  padding: 10px;
+  border-radius: 50%;
+  border: 3px solid;
+}
+.fa-lg{
+  line-height: .88em;
+}
+
+/* .profile-social-links .fa{
+  display: inline-block;
+  border-radius: 60px;
+  box-shadow: 0px 0px 2px #000000;
+  padding: 0.5em 0.6em;
+} */
+
+.profile-social-links li {
+  list-style-type: none;
+  margin: -5px 0px 0px 10px;
+  padding: 0px;
+  float: left;
+  text-align: center;
+}
+  
+.profile-social-links li a {
+  color: gray;
+  display: inline-block;
+  position: relative;
+  overflow: hidden !important;
+}
+  
+.profile-social-links li a i {
+  position: relative;
+  z-index: 1;
+}
+  
+.profile-social-links li a img,
+.profile-social-links li a svg {
+  width: 24px;
+  height: 24px;
+}
+
+
+/* ----------------------
+  particales js
+------------------------*/
+#changestyle {
+    position: absolute;
+    top: 45px;
+    right: 125px;
+    z-index: 9999;
+}
+#particles-js {
+  position: absolute;
+  width: 100vw;
+  height: 100vh;
+  background-color: #1a222c;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+}
+
+.down{
+  position: absolute;
+  bottom: 25px;
+  width: 100px;
+  margin: 0 auto;
+  display: block;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.down .icon{
+  position: absolute;
+  transform-style: preserve-3d;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  width: 100px;
+  height: 100px;
+  animation: pulse 1.3s infinite;
+  margin: -50px;
+  margin-top: 10px;
+}
+
+/* fa-pulse{
+  -webkit-animation:fa-spin 1s infinite steps(8);
+  animation:fa-spin 1s infinite steps(8)
+} */
+
+@-webkit-keyframes pulse{
+  0%,to{
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter:alpha(opacity=40);
+    opacity:.4;
+    top:0
+  }
+  50%{
+    -ms-filter:none;
+    -webkit-filter:none;
+    filter:none;
+    opacity:1;
+    top:-10px
+  }
+}
+
+@keyframes pulse{
+  0%,to{
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=40)";
+    filter:alpha(opacity=40);
+    opacity:.4;
+    top:0
+  }
+  50%{
+    -ms-filter:none;
+    -webkit-filter:none;
+    filter:none;
+    opacity:1;
+    top:-10px
+  }
+}
+
+/* ----------------------
+  Projects
+------------------------*/
+
+#projects{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.title h1{
+  font-size: 2.5rem;
+  margin-top: 1em;
+  padding-top: 1em;
+  line-height: 1.25;
+}
+
+
+/* ----------------------
+  Footer
+------------------------*/
+
+.footer{
+  background: #1a222c;
+  padding: 10px 0;
+  margin-top: 100px;
+  text-align: center;
+  color: white;
+  line-height: 1.5;
+}
+
+.footer .love{
+  color:red;
+}
+
+.footer p{
+  color:white;
+}
