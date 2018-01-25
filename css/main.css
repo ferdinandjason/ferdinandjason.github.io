@@ -37,6 +37,17 @@ section {
     overflow: hidden;
 }
 
+section.projects{
+  height: 200vh;
+  line-height: 1.2;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+
 section.intro {
     text-align: center;
 }
@@ -358,3 +369,93 @@ p {
 .footer p{
   color:white;
 }
+
+
+
+.overlay{
+  position: relative;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+}
+
+.overlay.show{
+  display: block;
+}
+
+#projects{
+  height: 100vh;
+}
+
+.projects-menu{
+  font-size: 0;
+  height: 100%;
+}
+
+.projects-menu li{
+  width: 50% !important;
+  height: 50% !important;
+  float: left;
+}
+
+.projects-menu .a{
+  color:#2c2d33;
+  outline: none;
+  text-decoration: none;
+}
+
+.projects-menu > li{
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  background-size: cover !important;
+  border: 10px solid #ffffff;
+  margin: 0px;
+}
+
+.projects-menu > li a{
+  border: 30px solid transparent;
+  background: rgba(0,0,0,0.6);
+  opacity: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.projects-menu >li:hover {
+  transform: scale(1.05);
+}
+
+ .projects-menu>li a span {
+  position:absolute;
+  top:50%;
+  left:50%;
+  -webkit-transform:translate(-50%, -50%);
+  -moz-transform:translate(-50%, -50%);
+  -ms-transform:translate(-50%, -50%);
+  -o-transform:translate(-50%, -50%);
+  transform:translate(-50%, -50%);
+  font-size:30px;
+  color:#fff;
+  padding-right:10px;
+  white-space:nowrap;
+  text-align:center;
+ }
+ .projects-menu>li a span strong {
+  color:rgba(255,255,255,1)
+ }
+ .projects-menu>li a span em {
+  font-size:20px;
+  line-height:33px;
+  color:#999
+ }
+
+ .inactive{
+   pointer-events: none;
+ }

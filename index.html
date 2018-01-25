@@ -6,13 +6,19 @@
         <!-- bootstrap 4.0.0-beta.2 -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
         <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css" integrity="sha256-e22BQKCF7bb/h/4MFJ1a4lTRR2OuAe8Hxa/3tgU5Taw=" crossorigin="anonymous" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.css" integrity="sha256-lJMsOpLg+Hdzs297wkRxAhSlJdXcuHHyo/JoB4uI7uw=" crossorigin="anonymous" />
+        
+        <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
         <!-- main style -->
         <link rel="stylesheet" type="text/css" href="css/main.css?v=2017.11.11">
     </head>
     <body>
         <div class="site-container">
-            <section class="intro">
+            <section class="intro" id="home">
                 <div id='particles-js'></div>
                 <div class="wrap">
                     <div class="content">
@@ -60,72 +66,121 @@
                     </div>
                 </div>
             </section>
-            <section id="projects">
+            <section id="projects" class="projects">
                 <div class="title">
                     <h1>Ferdinand's Projects</h1>
                 </div>
+                <div class="overlay show">
+                    <ul class="projects-menu">
+                        <li style="background:url(img/budget-planner.png) center center no-repeat">
+                            <a class="inactive" target="_blank" rel="nofollow external">
+                                <span>
+                                    Budget Planner
+                                </span>
+                            </a>
+                        </li>
+                        <li style="background:url(img/qemu.png) center center no-repeat">
+                            <a class="inactive" target="_blank" rel="nofollow external">
+                                <span>
+                                    XV6 Re-Implementation
+                                </span>
+                            </a>
+                        </li>
+                        <li style="background:url(img/city-builder.png) center center no-repeat">
+                            <a class="inactive" target="_blank" rel="nofollow external">
+                                <span>
+                                    City-Building Game
+                                </span>
+                            </a>
+                        </li>
+                        <li style="background:url(img/line-bot.png) center center no-repeat">
+                            <a class="inactive" target="_blank" rel="nofollow external">
+                                <span>
+                                    Bot Line
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             </section>
+                <div id="skills" class="title">
+                    <h1 style="text-align:center;">Tools and Experience</h1>
+                        <div class="row">
+                            <div class="col s12">
+                                <div class="card">
+                                    <div class="card-image">
+                                        <span class="card-title">
+                                            <a style="color:white" href=""></a>
+                                        </span> 
+                                    </div> 
+                                    <div class="card-content"> 
+                                        <p style="font-size:50px"> 
+                                            <i class="devicon-github-plain-wordmark colored"></i> 
+                                            <i class="devicon-heroku-line-wordmark colored"></i> 
+                                            <i class="devicon-javascript-plain colored"></i> 
+                                            <i class="devicon-bootstrap-plain-wordmark colored"></i> 
+                                            <i class="devicon-css3-plain colored"></i>
+                                            <i class="devicon-html5-plain colored"></i>
+                                            <i class="devicon-jquery-plain-wordmark colored"></i> 
+                                            <i class="devicon-wordpress-plain colored"></i> 
+                                            <i class="devicon-linux-plain colored"></i>
+                                            <i class="devicon-c-plain colored"></i>
+                                            <i class="devicon-cplusplus-plain colored"></i>
+                                            <i class="devicon-python-plain colored"></i>
+                                            <i class="devicon-java-plain colored"></i>
+                                            <i class="devicon-visualstudio-plain colored"></i>
+                                            <i class="devicon-firefox-plain colored"></i>
+                                            <i class="devicon-git-plain colored"></i>
+                                            <i class="devicon-gradle-plain colored"></i>
+                                            <i class="devicon-android-plain colored"></i>
+                                            <i class="devicon-laravel-plain colored"></i>
+                                            <i class="devicon-mysql-plain colored"></i>
+                                            <i class="devicon-oracle-original colored"></i>
+                                            <i class="devicon-php-plain colored"></i>
+                                            <i class="devicon-windows8-original colored"></i>
+                                        </p> 
+                                    </div> 
+                                </div> 
+                            </div> 
+                        </div> 
+                    </div> 
             <footer class="footer">
                 <p>Build with
                     <span class="love"> &#10084 </span>
                     by Ferdinand Jason
                 </p>
             </footer>
-                <!-- =================== script =================== -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+            <div class="fixed-action-btn horizontal">
+                <a class="btn-floating btn-large waves-effect waves-default pulse red darken-3">
+                    <i class="material-icons">menu</i>
+                </a>
+                <ul>
+                    <li><a class="btn-floating green" style="transform: scaleY(1) scaleX(1) translateY(0px) translateX(0px); opacity: 1;" href="#home"><i class="material-icons">home</i></a></li>
+                    <li><a class="btn-floating blue darken" style="transform: scaleY(1) scaleX(1) translateY(0px) translateX(0px); opacity: 1;" href="#projects"><i class="material-icons">code</i></a></li>
+                    <li><a class="btn-floating purple darken-2" style="transform: scaleY(1) scaleX(1) translateY(0px) translateX(0px); opacity: 1;" href="#skills"><i class="material-icons">accessibility</i></a></li>
+                    <li><a class="btn-floating yellow darken-2" style="transform: scaleY(1) scaleX(1) translateY(0px) translateX(0px); opacity: 1;"><i class="material-icons">person</i></a></li>
+                </ul>
+            </div>
+            <!-- =================== script =================== -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js" integrity="sha256-uWtSXRErwH9kdJTIr1swfHFJn/d/WQ6s72gELOHXQGM=" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.js" integrity="sha256-Cxf2osSjVdgIUDXd8CR70LjMnQD0TA908QL1v00EtMY=" crossorigin="anonymous"></script>
                 
-                <!-- <script src="lib/parallax.js-1.4.2/parallax.min.js"></script> -->
-                <!-- Latest compiled and minified JavaScript -->
-                <!-- particles js -->
-		        <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+            <!-- <script src="lib/parallax.js-1.4.2/parallax.min.js"></script> -->
+            <!-- Latest compiled and minified JavaScript -->
+            <!-- particles js -->
+		    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
         
-                <!-- bootstrap 4.0.0-beta.2 -->
-                <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
-                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+            <!-- bootstrap 4.0.0-beta.2 -->
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
         
-                <!-- main js file -->
-                <script src="js/main.js"></script>
-                <script>
-                        // Select all links with hashes
-                        $('a[href*="#"]')
-                        // Remove links that don't actually link to anything
-                        .not('[href="#"]')
-                        .not('[href="#0"]')
-                        .click(function(event) {
-                            // On-page links
-                            if (
-                            location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
-                            && 
-                            location.hostname == this.hostname
-                            ) {
-                            // Figure out element to scroll to
-                            var target = $(this.hash);
-                            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                            // Does a scroll target exist?
-                            if (target.length) {
-                                // Only prevent default if animation is actually gonna happen
-                                event.preventDefault();
-                                $('html, body').animate({
-                                scrollTop: target.offset().top
-                                }, 1000, function() {
-                                // Callback after animation
-                                // Must change focus!
-                                var $target = $(target);
-                                $target.focus();
-                                if ($target.is(":focus")) { // Checking if the target was focused
-                                    return false;
-                                } else {
-                                    $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
-                                    $target.focus(); // Set focus again
-                                };
-                                });
-                            }
-                            }
-                        });
-                    </script>
-                <script>
-                    background();
-                </script>
+            <!-- main js file -->
+            <script src="js/main.js"></script>
+            <script>
+                background();
+            </script>
         </div>
     </body>
+        
