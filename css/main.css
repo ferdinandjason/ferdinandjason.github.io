@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: 'Montserrat',sans-serif;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
   }  
 
 .unselectable{
@@ -47,8 +47,8 @@ section.intro {
 
 section.intro h2,
 section.intro h5 {
-    font-weight: 300;
     margin-bottom: 10px;
+    font-weight: 100;
 }
 
 h1,h2,h3,h4,h5,h6,p {
@@ -339,7 +339,6 @@ p {
   line-height: 1.25;
   text-align: center;
   margin-bottom: 2em;
-  font-family: 'Lato', sans-serif;
 }
 
 .heading::after {
@@ -546,19 +545,19 @@ p {
 
 .project__content{
   color: #FFFFFF;
-  left: 10px;
+  left: 20px;
   position: absolute;
-  top: 10px;
+  top: 20px;
   z-index: 99;
 }
 
 .project__type{
-  font-size: 1.2em;
+  font-size: 1em;
 }
 
 .project__title{
-  font-size: 2.5em;
-  font-weight: 700;
+  font-size: 2em;
+  font-weight: 600;
 }
 
 .project__overlay{
@@ -591,13 +590,13 @@ p {
 .project__github{
   border: 1px solid #fff;
   border-radius: 15px;
-  bottom: 15px;
+  bottom: 25px;
   color: #fff;
   display: block;
   font-size: 1.3em;
   padding: 5px 15px;
   position: absolute;
-  right: 15px;
+  right: 25px;
   transition: 0.5s ease all;
   z-index: 99;
 }
@@ -637,7 +636,15 @@ img{
   color: black;
 }
 
+#experience{
+  padding: 50px 15px;
+  text-align: center;
+  border-bottom: 1px solid #dcd9d9;
+}
 
+.background-alt{
+  background: #f2f2f5;
+}
 
 
 
