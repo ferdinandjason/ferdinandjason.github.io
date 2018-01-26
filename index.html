@@ -15,6 +15,7 @@
 
         <!-- main style -->
         <link rel="stylesheet" type="text/css" href="css/main.css?v=2017.11.11">
+        <link rel="stylesheet" type="text/css" href="css/vertical-timeline.css">
     </head>
     <body>
         <div class="site-container">
@@ -68,6 +69,16 @@
                     </div>
                 </div>
             </section>
+            <!-- <div id="experience" class="experience">
+                <div class="title">
+                    <h1 class="heading">Experience</h1>
+                </div>
+                <div id="experience-timeline">
+                    <div data-vdate="September 2016">
+                        Kuliah di Teknik Informatika
+                    </div>
+                </div>
+            </div> -->
             <div id="projects" class="projects">
                 <div class="title">
                     <h1 class="heading">Projects</h1>
@@ -212,7 +223,7 @@
                 </a>
             </footer>
             <div class="fixed-action-btn horizontal">
-                <a class="btn-floating btn-large waves-effect waves-default pulse red darken-3">
+                <a class="btn-floating btn-large red darken-3">
                     <i class="material-icons">menu</i>
                 </a>
                 <ul>
@@ -239,8 +250,10 @@
         
             <!-- main js file -->
             <script src="js/main.js"></script>
+            <script src="js/vertical-timeline.js"></script>
             <script>
                 background();
+                $("#experience-timeline").verticalTimeline();
                 var TxtType = function(el, toRotate, period) {
                     this.toRotate = toRotate;
                     this.el = el;
